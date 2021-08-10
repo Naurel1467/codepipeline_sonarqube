@@ -11,7 +11,7 @@ phases:
       - apt-get install -y maven
       - wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.3.0.1492-linux.zip -P /opt
       - unzip /opt/sonar-scanner-cli-3.3.0.1492-linux.zip 
-      - mv sonar-scanner-cli-3.3.0.1492-linux/ /opt/sonar-scanner
+      - mv sonar-scanner-3.3.0.1492-linux/ /opt/sonar-scanner
       - echo -e "sonar_project_key=PullRequestApproverBlogDemo\nsonar.host.url=http://34.230.8.82:9000/\nsonar.login=3482c192a5ee1ff853ead39b584bc602269758b6\nsonar.projectKey=PullRequestApproverBlogDemo\nsonar.sources=src" > /opt/sonar-scanner/conf/sonar-scanner.properties
       - export PATH="/opt/sonar-scanner/bin:$PATH"
      
