@@ -20,7 +20,7 @@ phases:
   build:
     commands:
       - mvn test     
-      - mvn sonar:sonar -Dsonar.host.url=http://34.230.8.82:9000/ -Dsonar.login=3482c192a5ee1ff853ead39b584bc602269758b6 -Dsonar.projectKey=PullRequestApproverBlogDemo -Dsonar.sources=src
+      - mvn sonar:sonar -Dsonar.host.url=http://34.230.8.82:9000/ -Dsonar.login=3482c192a5ee1ff853ead39b584bc602269758b6
       - sleep 5
       - curl http://34.230.8.82:9000/api/qualitygates/project_status?projectKey=$Project >result.json
       - cat result.json
